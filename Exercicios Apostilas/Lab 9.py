@@ -163,3 +163,63 @@ V=volume
 A=Area
 h=Altura
 print('Valor da Area:',A,' Valor da Altura',h,'Valor do Volume:',V)
+
+#Exercicio-8 
+import math as m
+
+def Função(f):
+  if x<0:
+    f=m.sqrt(m.fabs(x))
+  elif x>=0 or x<=1:
+    f=m.pow(x,2)
+  else:
+    f=m.log(x,5)
+
+x=float(input('Informe o valor de x: '))
+f=Função
+print('Valor da função: ',f)
+
+#Lista Complementar
+#Exercicio 1
+def Distancia(d):
+  d=m.sqrt(m.pow(xfinal-xinicial,2)+m.pow(yfinal-yinicial,2)+m.pow(zfinal-zinicial,2))
+xinicial=float(input('Valor inicial de x:'))
+xfinal=float(input('Valor final de x:'))
+yinicial=float(input('Valor inicial de y:'))
+yfinal=float(input('Valor final de y:'))
+zinicial=float(input('Valor inicial de z:'))
+zfinal=float(input('Valor final de z:'))
+
+D=Distancia
+
+print('Valor da função da distancia é de: ',D)
+
+#Exercicio 2
+import math as m
+
+def Area(A):
+  A=((m.pow(a,2)*m.sqrt(3))/2)+3*a*h
+def Volume(V):
+  V=(m.pow(a,2)*h*m.sqrt(3))/4
+
+a=float(input('Informe o valor da Aresta: '))
+h=float(input('Informe o valor da Altura: '))
+Volume=V
+Area=A
+print('Valor da Area:',A,'/n Valor da Volume:',V)
+
+#Exercicio 3
+import math as m
+
+def Geratriz(G):
+  hipotenusa=m.pow(h,2)+m.pow(r,2)
+  G=m.pow(hipotenusa,2)
+def Area(A):
+  A=m.pi*r*(g+r)
+def Volume(V):
+  V=(m.pi*m.pow(r,2)*h)/3
+r=float(input('Informe o valor do raio:'))
+h=float(input('Informe o valor da altura:'))
+Area=A
+Volume=V
+print('Valor da area:',A,'/n Valor do volume:',V)
