@@ -174,6 +174,7 @@ def Função(f):
     f=m.pow(x,2)
   else:
     f=m.log(x,5)
+  return f
 
 x=float(input('Informe o valor de x: '))
 f=Função
@@ -183,6 +184,8 @@ print('Valor da função: ',f)
 #Exercicio 1
 def Distancia(d):
   d=m.sqrt(m.pow(xfinal-xinicial,2)+m.pow(yfinal-yinicial,2)+m.pow(zfinal-zinicial,2))
+  return D
+
 xinicial=float(input('Valor inicial de x:'))
 xfinal=float(input('Valor final de x:'))
 yinicial=float(input('Valor inicial de y:'))
@@ -199,8 +202,11 @@ import math as m
 
 def Area(A):
   A=((m.pow(a,2)*m.sqrt(3))/2)+3*a*h
+  return A
+
 def Volume(V):
   V=(m.pow(a,2)*h*m.sqrt(3))/4
+  return V
 
 a=float(input('Informe o valor da Aresta: '))
 h=float(input('Informe o valor da Altura: '))
@@ -214,12 +220,20 @@ import math as m
 def Geratriz(G):
   hipotenusa=m.pow(h,2)+m.pow(r,2)
   G=m.pow(hipotenusa,2)
+  return G
+
 def Area(A):
   A=m.pi*r*(g+r)
+  return A
+
 def Volume(V):
   V=(m.pi*m.pow(r,2)*h)/3
+  return V
+
 r=float(input('Informe o valor do raio:'))
 h=float(input('Informe o valor da altura:'))
+
 Area=A
 Volume=V
+
 print('Valor da area:',A,'/n Valor do volume:',V)
